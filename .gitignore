@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Tooling artifacts
+.playwright-mcp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local reference archive (contains sensitive old files - never commit)
+archive/
+
+# Local coding guidelines (kept locally, not part of the published site)
+backend_coding_guidelines/
+frontend_coding_guidelines/

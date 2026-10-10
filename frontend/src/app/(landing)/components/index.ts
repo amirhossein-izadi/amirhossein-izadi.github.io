@@ -1,0 +1,9 @@
+export { About } from "./About";
+export { Awards } from "./Awards";
+export { Education } from "./Education";
+export { Experience } from "./Experience";
+export { Footer } from "./Footer";
+export { Hero } from "./Hero";
+export { Nav } from "./Nav";
+export { ResearchInterests } from "./ResearchInterests";
+export { Skills } from "./Skills";

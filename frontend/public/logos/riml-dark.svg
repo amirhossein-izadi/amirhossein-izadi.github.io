@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img" aria-label="RIML logo">
+  <title>RIML Logo</title>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 421 423 L 421 520 L 479 520 L 479 508 L 434 507 L 434 423 Z"/>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 296 423 L 296 520 L 309 520 L 310 449 L 340 520 L 351 519 L 380 449 L 381 519 L 394 520 L 394 423 L 377 423 L 346 499 L 341 493 L 313 423 Z"/>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 256 423 L 256 520 L 269 520 L 269 423 Z"/>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 165 423 L 165 520 L 178 520 L 179 483 L 200 483 L 220 520 L 236 520 L 215 483 L 217 479 L 226 473 L 232 460 L 232 446 L 226 433 L 220 428 L 206 423 Z M 178 435 L 201 434 L 212 438 L 216 442 L 219 450 L 216 464 L 205 471 L 179 471 Z"/>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 442 122 L 400 164 L 400 166 L 420 185 L 443 163 L 509 229 L 443 295 L 377 229 L 397 208 L 378 188 L 376 188 L 336 229 L 443 336 L 550 229 Z"/>
+  <path fill="#9EC1F0" fill-rule="evenodd" d="M 196 122 L 89 229 L 197 336 L 238 295 L 237 292 L 218 274 L 196 295 L 131 230 L 131 228 L 197 163 L 262 228 L 262 230 L 240 252 L 260 272 L 304 229 Z"/>
+  <path fill="#F4BB47" fill-rule="evenodd" d="M 218 188 L 176 230 L 320 373 L 399 294 L 378 274 L 319 332 L 218 231 L 239 209 L 239 207 L 220 188 Z"/>
+  <path fill="#F4BB47" fill-rule="evenodd" d="M 319 87 L 242 164 L 242 166 L 261 185 L 263 185 L 320 129 L 421 230 L 401 251 L 421 272 L 463 230 Z"/>
+</svg>

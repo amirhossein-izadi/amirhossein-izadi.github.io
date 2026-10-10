@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --background: 0 0% 100%;
+    --foreground: 224 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 18% 12%;
+    --muted: 220 16% 96%;
+    --muted-foreground: 222 10% 44%;
+    --border: 220 14% 90%;
+    --ring: 221 68% 45%;
+    --brand: 221 68% 45%;
+    --brand-foreground: 0 0% 100%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --background: 224 16% 8%;
+    --foreground: 220 16% 93%;
+    --card: 224 15% 10%;
+    --card-foreground: 220 16% 93%;
+    --muted: 223 13% 14%;
+    --muted-foreground: 220 10% 64%;
+    --border: 223 12% 19%;
+    --ring: 217 80% 62%;
+    --brand: 217 80% 64%;
+    --brand-foreground: 224 16% 8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    background: hsl(var(--brand) / 0.15);
+  }
+}
+
+@keyframes float-ai {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-80px) scale(1.6);
+  }
+}
