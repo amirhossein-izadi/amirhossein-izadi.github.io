@@ -60,9 +60,10 @@ export const EXPERIENCES: ExperienceEntry[] = [
     role: "Research Assistant",
     period: "Apr 2026 - Present",
     summary:
-      "Developing architectural improvements for large vision-language models to close reasoning gaps.",
+      "Investigating training and evaluation methods for evidence-sensitive reasoning in vision-language models.",
     description:
-      "Research at the Robust and Interpretable Machine Learning (RIML) Lab, focused on closing reasoning gaps in large vision-language models through architectural improvements.",
+      "Studying visual reasoning in vision-language models - from question-conditioned visual grounding to evaluating whether model answers respond to visual evidence.",
+    mentors: [{ label: "Dr. Mohammad Hossein Rohban", href: SCHOLAR.rohban }],
   },
   {
     id: "sharif-ta",
