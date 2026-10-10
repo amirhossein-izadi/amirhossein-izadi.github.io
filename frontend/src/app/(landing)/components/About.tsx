@@ -21,11 +21,12 @@ export function About() {
         </p>
         <p>
           I am currently a Research Assistant at the RIML Lab at Sharif
-          University of Technology, developing architectural improvements for{" "}
-          <strong className={EMPHASIS}>large vision-language models</strong> to
-          close reasoning gaps. Alongside research, I have served as a teaching
-          assistant for machine learning, deep learning, and computer vision
-          courses at SUT and SBU, and mentored several ML and MLOps bootcamps.
+          University of Technology, investigating training and evaluation
+          methods for evidence-sensitive reasoning in{" "}
+          <strong className={EMPHASIS}>vision-language models</strong>.
+          Alongside research, I have served as a teaching assistant for machine
+          learning, deep learning, and computer vision courses at SUT and SBU,
+          and mentored several ML and MLOps bootcamps.
         </p>
         <p>
           My broader interests span{" "}

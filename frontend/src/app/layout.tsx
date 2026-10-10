@@ -94,7 +94,7 @@ const PERSON_JSON_LD = {
   alternateName: "Amir Izadi",
   url: SITE.siteUrl,
   jobTitle: "AI Researcher & Computer Engineering Graduate",
-  email: "mailto:AmirIzadi2002@gmail.com",
+  email: `mailto:${SITE.email}`,
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "Shahid Beheshti University",
