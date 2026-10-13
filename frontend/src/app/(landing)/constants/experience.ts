@@ -81,16 +81,19 @@ export const EXPERIENCES: ExperienceEntry[] = [
         name: "Machine Learning",
         terms: "Fall 2024",
         instructors: [{ label: "Dr. Sharifi Zarchi", href: SCHOLAR.sharifi }],
+        contributionId: "machine-learning",
       },
       {
         name: "Deep Learning (Graduate Course)",
         terms: "Spring 2025, Spring 2026, Fall 2026",
         instructors: [{ label: "Dr. Soleymani Baghshah", href: SCHOLAR.soleymani }],
+        contributionId: "deep-learning",
       },
       {
         name: "Modern Information Retrieval",
         terms: "Spring 2026",
         instructors: [{ label: "Dr. Soleymani Baghshah", href: SCHOLAR.soleymani }],
+        contributionId: "modern-ir",
       },
       {
         name: "Intelligent Analysis of Biomedical Images (Graduate Course)",

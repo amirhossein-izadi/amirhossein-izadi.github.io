@@ -5,6 +5,7 @@ import { Disclosure } from "@/components/ui/disclosure";
 import { cn } from "@/lib/utils";
 
 import type { CourseLine, ExperienceEntry, Ref } from "../types";
+import { ContributionsDialog } from "./ContributionsDialog";
 
 const TYPE_DOT: Record<ExperienceEntry["type"], string> = {
   research: "bg-violet-500",
@@ -33,6 +34,27 @@ function RefList({ items }: { items: Ref[] }) {
         <span key={`${item.label}-${item.href}`}>
           {index > 0 ? ", " : ""}
           <RefLink item={item} />
+        </span>
+      ))}
+    </>
+  );
+}
+
+function InstructorLinks({ items }: { items: Ref[] }) {
+  return (
+    <>
+      {items.map((item, index) => (
+        <span key={`${item.label}-${item.href}`}>
+          {index > 0 ? ", " : ""}
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-dotted decoration-muted-foreground/50 underline-offset-2 transition-colors hover:text-foreground hover:decoration-muted-foreground"
+            onClick={(event) => event.stopPropagation()}
+          >
+            {item.label}
+          </a>
         </span>
       ))}
     </>
@@ -77,11 +99,18 @@ function CourseLines({ courses }: { courses: CourseLine[] }) {
             aria-hidden
           />
           <span>
-            <CourseName name={line.name} /> - {line.terms}
+            {line.contributionId ? (
+              <ContributionsDialog courseId={line.contributionId}>
+                <CourseName name={line.name} />
+              </ContributionsDialog>
+            ) : (
+              <CourseName name={line.name} />
+            )}{" "}
+            - {line.terms}
             {line.instructors.length > 0 ? (
               <>
                 {" · "}
-                <RefList items={line.instructors} />
+                <InstructorLinks items={line.instructors} />
               </>
             ) : null}
           </span>
@@ -174,7 +203,9 @@ export function ExperienceEntryItem({ entry }: ExperienceEntryItemProps) {
             <BulletList items={entry.achievements} />
           ) : null}
           {entry.courses?.length ? (
-            <CourseLines courses={entry.courses} />
+            <div className="rounded-md border border-border/70 bg-muted/30 p-3.5">
+              <CourseLines courses={entry.courses} />
+            </div>
           ) : null}
           {entry.positions?.map((position) => (
             <div
@@ -227,23 +258,23 @@ export function ExperienceEntryItem({ entry }: ExperienceEntryItemProps) {
               ))}
             </div>
           ) : null}
-          {entry.references?.length ? (
-            <div className="flex flex-wrap gap-3">
-              {entry.references.map((reference) => (
-                <a
-                  key={reference.href}
-                  href={reference.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-brand hover:underline"
-                  onClick={(event) => event.stopPropagation()}
-                >
-                  <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-                  {reference.label}
-                </a>
-              ))}
-            </div>
-          ) : null}
+        {entry.references?.length ? (
+          <div className="flex flex-wrap gap-3">
+            {entry.references.map((reference) => (
+              <a
+                key={reference.href}
+                href={reference.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-brand hover:underline"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                {reference.label}
+              </a>
+            ))}
+          </div>
+        ) : null}
         </div>
       ) : null}
     </Disclosure>

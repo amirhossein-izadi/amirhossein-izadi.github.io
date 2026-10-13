@@ -9,6 +9,7 @@ export interface CourseLine {
   name: string;
   terms: string;
   instructors: Ref[];
+  contributionId?: string;
 }
 
 export interface ExperiencePosition {

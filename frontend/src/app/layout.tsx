@@ -41,9 +41,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: SITE.name, url: SITE.siteUrl }],
   creator: SITE.name,
-  alternates: {
-    canonical: "/",
-  },
   robots: {
     index: true,
     follow: true,

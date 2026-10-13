@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import {
   About,
   Awards,
@@ -9,6 +11,12 @@ import {
   ResearchInterests,
   Skills,
 } from "./components";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function HomePage() {
   return (
