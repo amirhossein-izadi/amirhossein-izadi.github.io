@@ -199,7 +199,7 @@ const COURSES: Course[] = [
   {
     id: "modern-ir",
     name: "Modern Information Retrieval",
-    code: "CE-324",
+    code: "CE40324",
     terms: "Spring 2026",
     instructor: "Dr. Soleymani Baghshah",
     instructorUrl: "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en",
@@ -214,6 +214,28 @@ const COURSES: Course[] = [
             label: "Open",
             href: "https://docs.google.com/presentation/d/1JsGwAtz5BiSecrylL52WMzI6WPkhW2Zgmd_81vDiPJo/edit?usp=sharing",
             kind: "link",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "biomedical-images",
+    name: "Intelligent Analysis of Biomedical Images (Graduate)",
+    code: "CE40951.5",
+    terms: "Fall 2026",
+    instructor: "Dr. Mohammad Hossein Rohban",
+    instructorUrl: "https://scholar.google.com/citations?hl=en&user=pRyJ6FkAAAAJ",
+    materials: [
+      {
+        title: "HW5 - From U-Net to Foundation Models",
+        tag: "theory",
+        term: "Fall 2026",
+        actions: [
+          {
+            label: "Solution",
+            href: "/files/ta-sut/iabi-hw5-solutions-en.pdf",
+            kind: "download",
           },
         ],
       },

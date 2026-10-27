@@ -99,6 +99,7 @@ export const EXPERIENCES: ExperienceEntry[] = [
         name: "Intelligent Analysis of Biomedical Images (Graduate Course)",
         terms: "Fall 2026",
         instructors: [{ label: "Dr. Rohban", href: SCHOLAR.rohban }],
+        contributionId: "biomedical-images",
       },
     ],
   },
