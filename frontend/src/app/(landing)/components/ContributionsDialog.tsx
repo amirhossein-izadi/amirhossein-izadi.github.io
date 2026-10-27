@@ -226,6 +226,8 @@ const COURSES: Course[] = [
     terms: "Fall 2026",
     instructor: "Dr. Mohammad Hossein Rohban",
     instructorUrl: "https://scholar.google.com/citations?hl=en&user=pRyJ6FkAAAAJ",
+    summary:
+      "Graduate course on AI for biomedical imaging - segmentation, detection, interpretability, generative models, and foundation models. Designed HW5, the theory homework covering each of these areas.",
     materials: [
       {
         title: "HW5 - From U-Net to Foundation Models",
